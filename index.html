@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Code Quiz Challenge</title>
+        <link rel="stylesheet" type="text/css" href="./assets/style.css"/>
+</head>
+<header>
+    
+    <p id="view-score">View high scores</p>
+    <p id="countdown"></p>
+<body>
+    <div class="scores"><a href="#./highscores.html"></a></div>
+
+</header>
+
+    <div class="wrapper"></div>
+    <div class="card start"></div>
+    <div class="card-header"></div>
+
+
+    <!--Quiz Section-->
+    <main>
+    <div id="quiz"> 
+        <div class="quiz-header">
+    </div>
+
+    <h2 id="question-container">   
+        Question Text
+    </h2>
+    
+            <div id="question-1" class="question">
+                <h2>What does HTML stand for?</h2>
+                <div class="btn-group-vertical">
+                    <button class="btn answer correct">A HyperText Markup Language</button>
+                    <button class="btn answer wrong">B HyperTool Markup Language</button>
+                    <button class="btn answer wrong">C HyperText Makeup Language</button>
+                    <button class="btn answer wrong">D HyperTest Markup Language</button>
+                </div>
+            </div>
+        
+            <div id="question-2" class="question">
+                <h2>What are the 2 types of Arrays in Javascript?</h2>
+                <div class="btn-group-vertical">
+                    <button class="btn answer wrong">A Static and Undefined</button>
+                    <button class="btn answer wrong">B Dynamic and Strings</button>
+                    <button class="btn answer correct">C Static and Dynamic</button>
+                    <button class="btn answer wrong">D Dynamic and Declaration</button>
+                </div>
+            </div>
+
+            <div id="question-3" class="question">
+                <h2>What is and object that can store multiple valves at once?</h2>
+                <div class="btn-group-vertical">
+                    <button class="btn answer correct">A array</button>
+                    <button class="btn answer wrong">B valve</button>
+                    <button class="btn answer wrong">C strict</button>
+                    <button class="btn answer wrong">D number</button>
+                </div>
+            </div>
+
+            <div id="question-4" class="question">
+                <h2>What type represents a logical entity and is <b> inhabited ny two values: true and false?</b></h2>
+                <div class="btn-group-vertical">
+                    <button class="btn answer wrong">A strings</button>
+                    <button class="btn answer wrong">B booleans</button>
+                    <button class="btn answer correct">C alerts</button>
+                    <button class="btn answer wrong">D numbers</button>
+                </div>
+            </div>
+
+            <div id="question-5" class="question">
+                <h2>What type of Language is JavaScript</h2>
+                <div class="btn-group-vertical">
+                    <button class="btn answer wrong">A dynamic</button>
+                    <button class="btn answer wrong">B textile</button>
+                    <button class="btn answer wrong">C markup</button>
+                    <button class="btn answer correct">D programming</button>
+                </div>
+            </div>
+
+            <div id="result" class="mt-3">
+                <h2></h2>
+            </div>
+        </div>
+    </section>
+    <section id="done" >
+        <h1>All done!</h1>
+        <p id="final-score"></p>
+        <div class="d-flex flex-wrap justify-content-center">
+            <p class="mb-0">Enter initials: </p>
+            <input class="mx-1" type="text" name="initials" placeholder="" />
+            <button class="btn" id="save-score" type="submit">Submit</button>
+        </div>
+    </section>
+</div>
+<div class="row justify-content-center">
+    <section id="high-scores" >
+        <h1>High Scores</h1>
+        <ol class="score mx-auto list-color">
+        </ol>
+        <button class="btn" id="go-back">Go back</button>
+        <button class="btn" id="clear-score">Clear high scores</button>
+    </section>
+</div>
+    
+    <script src="./assets/script.js"></script>
+    </main>
+</body>
+</html>
